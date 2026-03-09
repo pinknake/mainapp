@@ -4,6 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
+
 <title>PinkSnake Hub</title>
 
 <style>
@@ -107,7 +110,7 @@ margin-top:40px;
 <body>
 
 <nav>
-<h1>🐍 PinkSnake</h1>
+<h1><img src="logo.png" width="40"> PinkSnake</h1>
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="https://pinknake.github.io/Gmusic/">Music</a></li>
@@ -146,6 +149,11 @@ margin-top:40px;
 <footer>
 © 2026 PinkSnake | All Rights Reserved
 </footer>
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('sw.js');
+}
+</script>
 
 </body>
 </html>
