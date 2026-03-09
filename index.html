@@ -8,31 +8,75 @@
 
 <style>
 body{
-font-family: Arial, sans-serif;
 margin:0;
+font-family:Arial, sans-serif;
 background:#0f172a;
 color:white;
-text-align:center;
 }
 
-header{
+/* Navbar */
+nav{
 background:#111827;
-padding:20px;
-font-size:28px;
-font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
 }
 
+nav h1{
+margin:0;
+font-size:22px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+margin:0;
+padding:0;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+/* Hero */
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#cbd5f5;
+}
+
+/* Cards */
 .container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 padding:30px;
 }
 
 .card{
 background:#1e293b;
-margin:20px auto;
 padding:20px;
+width:260px;
 border-radius:10px;
-max-width:400px;
+text-align:center;
 box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.card h3{
+margin-top:0;
 }
 
 .card a{
@@ -49,11 +93,12 @@ border-radius:6px;
 background:#16a34a;
 }
 
+/* Footer */
 footer{
-margin-top:40px;
-padding:20px;
 background:#111827;
-font-size:14px;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 </style>
 
@@ -61,27 +106,38 @@ font-size:14px;
 
 <body>
 
-<header>
-🐍 PinkSnake Hub
-</header>
+<nav>
+<h1>🐍 PinkSnake</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="https://pinknake.github.io/Gmusic/">Music</a></li>
+<li><a href="https://pinknake.github.io/gameplay/">Games</a></li>
+<li><a href="#">Apps</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h2>Welcome to PinkSnake Hub</h2>
+<p>Explore apps, games and tools created by PinkSnake.</p>
+</div>
 
 <div class="container">
 
 <div class="card">
-<h2>🎵 GMusic App</h2>
+<h3>🎵 GMusic</h3>
 <p>Free music streaming project.</p>
 <a href="https://pinknake.github.io/Gmusic/">Open</a>
 </div>
 
 <div class="card">
-<h2>🎮 Gameplay</h2>
-<p>Gaming page with fun content.</p>
+<h3>🎮 Gameplay</h3>
+<p>Fun gaming content and projects.</p>
 <a href="https://pinknake.github.io/gameplay/">Open</a>
 </div>
 
 <div class="card">
-<h2>📱 Future Apps</h2>
-<p>More apps coming soon.</p>
+<h3>📱 Future Apps</h3>
+<p>More apps and tools coming soon.</p>
 <a href="#">Coming Soon</a>
 </div>
 
